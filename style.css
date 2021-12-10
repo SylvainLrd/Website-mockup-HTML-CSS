@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+
+body {
+    font-family: Raleway;
+    margin: 0;
+    padding: 0px 50px;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 120%;
+}
+
+
+
+/* ********** header + nav ********* */
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px;
+}
+
+header #logo {
+    padding: 25px 0px;
+}
+
+header #logo img {
+    width: 150px;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+header nav ul li {
+    padding: 50px 25px;
+    border-top: 4px solid transparent;
+    margin: 0px 20px 0px 20px;
+}
+
+header nav ul li:hover {
+    border-color: #0065FC;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+header nav ul li:hover a {
+    color: #0065FC;
+}
+
+
+
+/* ********* title + search-box ************ */
+
+
+h1 {
+    margin-bottom: 0px
+}
+
+.subtitle {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    width: 312px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.search-box .fa-map-marker-alt {
+    display: flex;
+    padding: 14px;
+    height: 28px;
+    font-size: 25px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.search-box input {
+    outline: none;
+    height: 52px;
+    margin-left: -5px;
+    border: none;
+    padding: 10px;
+}
+
+.search-box button {
+    background-color: #0065FC;
+    color: white;
+    height: 52px;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.search-box button .fa-search {
+    display: none;
+}
+
+
+
+
+/* ********** Filtre ******** */
+
+#filtre {
+    display: flex;
+    align-items: center;
+}
+
+#filtre .filtre-box {
+    margin: 0px 10px;
+    border-radius: 30px;
+    border: 2px solid #F2F2F2;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+#filtre .filtre-box i {
+    background-color: #DEEBFF;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border-radius: 100%;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#filtre .filtre-box:hover {
+    transition: background-color 1s;
+    background-color: #DEEBFF;
+}
+
+#filtre .filtre-box .text {
+    padding: 0px 10px;
+}
+
+
+
+/* *************** Infos ************ */
+
+
+.info {
+    display: flex;
+}
+
+.info .fas.fa-info {
+    color: #0065FC;
+    border: 1px solid #F2F2F2;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+
+
+/* *************** Footer *************** */
+
+
+footer {
+    background-color: #F2F2F2;
+    margin: 0px -50px;
+    padding: 50px;
+    display: flex;
+}
+
+footer .colonne {
+    width: 30%;
+}
+
+footer .colonne ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+footer .colonne ul li a {
+    color: black;
+    text-decoration: none;
+    line-height: 35px;
+}

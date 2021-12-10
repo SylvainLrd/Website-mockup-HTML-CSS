@@ -2,103 +2,99 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        
+      
         <title>Booki</title>
-
+        <link rel="stylesheet" href="style.css">
+   
+        
+      
     </head>
     <body>
-       <header>
-           <nav>
-               <img src="images/logo/Booki.png" alt="logo du site" />
+      <header>
+          <div id="logo">
+               <img src="Image/logo/Booki@3x.png" alt="logo du site" />
+          </div> 
+            <nav>
                <ul>
-                   <li><a href="#activites">Activités</a></li>
-                   <li><a href="#hebergements">Hébergements</a></li>
+                   <li><a href="#hebergement">Hébergements</a></li>
+                   <li><a href="#activite">Activités</a></li>
                </ul>
-           </nav>
-           <div id="moteurderecherche">
-               <h3>Trouver votre hébergement pour des vacances de rêve</h3>
-               <p>En plein centre ville ou en pleine nature</p>
-              <form>
-                  <input placeholder="Marseille,France">
-                  <button>Rechercher</button>
-              </form>
-                <h4>Filtres</h4>
-                <button>Economique</button>
-                <button>Familial</button>
-                <button>Romantique</button>
-                <button>Animaux autorisés</button>
-
-            </div>
-       </header>
-       <sectrion> 
-            <div id="presentation">
-             <h3>Hébergements à Marseille</h3>
-              <div class="imagesPresentation">
-                <a href="#"><img src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge"></a>
-                <h4>Auberge La Cannebière</h4>
-                <p>Nuit à partir de 25€</p>
-              </div>
-              <div class="imagesPresentation">
-                <a href="#"><img src="Images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port"></a>
-                <h4>Hôtel du port</h4>
-                <p>Nuit à partir de 52€</p>
-              </div>
-              <div class="imagesPresentation">
-                <a href="#"><img src="Images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes"></a>
-                <h4>Hôtel Les mouettes</h4>
-                <p>Nuit à partir de 75€</p>
-              </div>
-              <div class="imagesPresentation">
-                <a href="#"><img src="Images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer"></a>
-                <h4>Hôtel de la mer</h4>
-                <p>Nuit à partir de 46€</p>
-              </div>
-              <div class="imagesPresentation">
-                <a href="#"><img src="Images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier"></a>
-                <h4>Auberge Le Panier</h4>
-                <p>Nuit à partir de 23€</p>
-              </div>
-              <div class="imagesPresentation">
-                <a href="#"><img src="Images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina"></a>
-                <h4>Hôtel chez Amina</h4>
-                <p>Nuit à partir de 96€</p>
-              </div>
-              <lu>
-                  <li>Afficher plus</li>
-              </lu>
-             <h3>Les plus populaires</h3>
-              <div class="imagesPresentation">
-                <a href="#"><img src="Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin"></a>
-                <h4>Hôtel Le soleil du matin</h4>
-                <p>Nuit à partir de 128€</p>
-              </div>
-              <div class="imagesPresentation">
-                <a href="#"><img src="Images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes"></a>
-                <h4>Au coeur de l'eau Chambres d'hôtes</h4>
-                <p>Nuit à partir de 75€</p>
-              </div>
-              <div class="imagesPresentation">
-                <a href="#"><img src="Images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel tout bleu et Blanc"></a>
-                <h4>Hôtel tout bleu et Blanc</h4>
-                <p>Nuit à partir de 68€</p>
-              </div>
-            </div>
-        </sectrion>
-         
-        <section>
-
-
+            </nav>
+      </header> 
+      <main>
+        <h1>Trouvez votre hébergement pour des vavanves de rêve</h1>
+        <span class="subtitle">En plein centre ville ou en pleine nature</span>
+        <div class="search-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="texte" placeholder="Marseille, France">
+            <button>
+            <span>Rechercher</span>
+            <i class="fas fa-search"></i>
+        </button>
+        </div>
+        <section id="filtre">
+            <h2>Filtres</h2>
+            <span class="filtre-box">
+            <i class="fas fa-money-bill-wave"></i>
+            <span class="texte">Économique</span>
+            </span>
+            <span class="filtre-box">
+            <i class="fas fa-child"></i>
+            <span class="texte">Familial</span>
+            </span>
+            <span class="filtre-box">
+            <i class="fas fa-heart"></i>
+            <span class="texte">Romantique</span>
+            </span>
+            <span class="filtre-box">
+            <i class="fas fa-dog"></i>
+            <span class="texte">Animaux autorisés</span>
+            </span>
         </section>
-      
-      
-      
-       <footer>
+        <p class="info"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+        
 
 
 
-       </footer>
 
-
-    </body>
-
+  </main>
+  <footer>
+      <div class="colonne">
+          <h2>A propos</h2>
+          <ul>
+              <li>
+                  <a href="#">Fonctionnement du site</a>
+              </li>
+              <li>
+                  <a href="#">Conditions générales de vente</a>
+              </li>
+              <li>
+                  <a href="#">Données et confidentialité</a>
+              </li>
+          </ul>
+      </div>
+      <div class="colonne">
+          <h2>Nos hébergements</h2>
+          <ul>
+              <li>
+                  <a href="#">Charte qualité</a>
+              </li>
+              <li>
+                  <a href="#">Soumettre votre hôtel</a>
+              </li>
+          </ul>
+      </div>
+      <div class="colonne">
+          <h2>Assistance</h2>
+          <ul>
+              <li>
+                  <a href="#">Centre d'aide</a>
+              </li>
+              <li>
+                  <a href="#">Nous contacter</a>
+              </li>
+          </ul>
+      </div>
+  </footer>
+</body>
 </html>
