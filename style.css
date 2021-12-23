@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+*
+{
+    font-family: 'Raleway', 'sans-serif', impact, arial;
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
 
 
 body {
-    font-family: Raleway;
+    font-family:'Raleway';
     margin: 0;
     padding: 0px 50px;
     font-size: 18px;
@@ -10,12 +19,14 @@ body {
 
 h1 {
     font-size: 150%;
+    color: black;
+    font-family: 'Raleway', 'sans-serif', impact, arial;
+    font-weight: bold;
 }
 
 h2 {
     font-size: 120%;
 }
-
 
 
 /* ********** header + nav ********* */
@@ -61,7 +72,6 @@ header nav ul li:hover a {
 }
 
 
-
 /* ********* titre + search-box ************ */
 
 
@@ -74,7 +84,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-.search-box {
+.searchBox {
     display: flex;
     border: 1px solid #F2F2F2;
     border-radius: 15px;
@@ -83,7 +93,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-.search-box .fa-map-marker-alt {
+.searchBox .fa-map-marker-alt {
     display: flex;
     padding: 14px;
     height: 28px;
@@ -92,7 +102,7 @@ h1 {
     border-radius: 15px 0px 0px 15px;
 }
 
-.search-box input {
+.searchBox input {
     outline: none;
     height: 52px;
     margin-left: -5px;
@@ -100,7 +110,7 @@ h1 {
     padding: 10px;
 }
 
-.search-box button {
+.searchBox button {
     background-color: #0065FC;
     color: white;
     height: 52px;
@@ -110,21 +120,20 @@ h1 {
     cursor: pointer;
 }
 
-.search-box button .fa-search {
+.searchBox button .fa-search {
     display: none;
 }
 
 
-
-
 /* ********** Filtre ******** */
+
 
 #filtre {
     display: flex;
     align-items: center;
 }
 
-#filtre .filtre-box {
+#filtre .filtreBox {
     margin: 0px 10px;
     border-radius: 30px;
     border: 2px solid #F2F2F2;
@@ -135,7 +144,7 @@ h1 {
     transition: background-color 1s;
 }
 
-#filtre .filtre-box i {
+#filtre .filtreBox i {
     background-color: #DEEBFF;
     height: 50px;
     width: 50px;
@@ -147,15 +156,14 @@ h1 {
     justify-content: center;
 }
 
-#filtre .filtre-box:hover {
+#filtre .filtreBox:hover {
     transition: background-color 1s;
     background-color: #DEEBFF;
 }
 
-#filtre .filtre-box .text {
+#filtre .filtreBox .text {
     padding: 0px 10px;
 }
-
 
 
 /* *************** Infos ************ */
@@ -178,18 +186,190 @@ h1 {
     margin-right: 10px;
 }
 
+
 /* **************** Hébergements ************** */
 
 
+#hebergement {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hebergement .contenant{
+    background-color: #F2F2F2;
+    padding: 20px 50px 10px 50px;
+    border-radius: 25px;
+}
+
+#hebergement .contenant h2 {
+    margin: 10px 0px 20px 10px;
+    color: black;
+    font-weight: bold;
+}
 
 
+.hebergementListe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.marseille .hebergementListe a {
+    width: 30%;
+    margin-bottom: 30px;
+}
+.marseille .hebergementListe a article {
+    background-color:white;
+    padding: 6px;
+    border-radius: 25px;
+    height: 250px;
+}
+
+.hebergementListe a article {
+    background-color:white;
+    padding: 6px;
+    border-radius: 25px;
+    height: 100%;
+}
+
+.hebergementListe a article:hover {
+    box-shadow: 5px 5px 5px 0px #E2E2E2;
+}
+
+.hebergementListe a article img {
+    width: 100%;
+    height: 60%;
+    border-radius: 25px 25px 0px 0px;
+    object-fit: cover;
+}
+
+.hebergementListe a article .articleContenant {
+    padding: 10px 10px 0px 10px;
+}
+
+.hebergementListe a article .articleContenant h3,
+.hebergementListe a article .articleContenant p {
+    margin: 6px;
+    font-weight: bold;
+}
+.hebergementListe a article .fa-star.blue {
+    color: #0065FC;
+}
+
+.hebergementListe a article .fa-star.grey {
+    color: #F2F2F2;
+}
 
 
+/* ********************** Marseille ************************ */
 
 
+#hebergement .marseille {
+    background-color: #F2F2F2;
+    width: 60%;
+    border-radius: 25px;    
+}
+
+#hebergement .marseille .subtitle {
+    font-weight: bold;
+    font-size: 120%;
+}
 
 
+/* ************* Populaire ******************** */
 
+
+.populaire .graphiqueIcon {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-size: 125%;
+}
+
+#hebergement .populaire {
+    width: 35%;
+    position: relative;
+}
+
+#hebergement .populaire .hebergementListe {
+    flex-direction: column;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+.populaire .hebergementListe a {
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+#hebergement .populaire .hebergementListe a article {
+    display: flex;
+    flex-direction: row;
+}
+
+#hebergement .populaire .hebergementListe a article img {
+    border-radius: 25px 0px 0px 25px;
+    width: 200px;
+    height: 150px;
+}
+
+#hebergement .populaire .hebergementListe a article .articleContenant {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+
+/* ********************** Activite ***************** */
+
+
+#activite {
+    padding: 60px 0px 30px 0px;
+    margin-bottom: 60px;
+}
+
+.activiteListe {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 25px 0px 0px 0px;
+}
+
+.activiteListe article {
+    background-color: white;
+    box-shadow: 0 0 20px #0000002e;
+    padding: 0px 0px 20px 0px;
+    border-radius: 25px;
+    margin: 0px 0px 20px 0px;
+}
+
+.activiteListe .colonne {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 25px;
+}
+
+.activiteListe .colonne article img {
+    width: 400px;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.activiteListe .colonneDouble article img {
+    width: 400px;
+    height: 222px;
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+.activiteListe h3 {
+    padding: 20px;
+}
+
+.activiteListe .article .colonneDouble article {
+    padding-bottom: 50px;
+}
 
 
 /* *************** Footer *************** */
