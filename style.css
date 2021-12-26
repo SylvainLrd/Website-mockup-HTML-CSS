@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-*
-{
-    font-family: 'Raleway', 'sans-serif', impact, arial;
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap'); */
+
+* {
+    font-family: 'Raleway';
     font-size: 1em;
     text-decoration: none;
     color: black;
@@ -20,8 +20,7 @@ body {
 h1 {
     font-size: 150%;
     color: black;
-    font-family: 'Raleway', 'sans-serif', impact, arial;
-    font-weight: bold;
+    font-family: 'Raleway';
 }
 
 h2 {
@@ -236,8 +235,8 @@ h1 {
 }
 
 .hebergementListe a article img {
-    width: 100%;
-    height: 60%;
+    width: 285px;
+    height: 140px;
     border-radius: 25px 25px 0px 0px;
     object-fit: cover;
 }
@@ -256,7 +255,7 @@ h1 {
 }
 
 .hebergementListe a article .fa-star.grey {
-    color: #F2F2F2;
+    color: #d9d9d9;
 }
 
 
@@ -314,11 +313,12 @@ h1 {
 
 #hebergement .populaire .hebergementListe a article .articleContenant {
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    
+    flex-direction: column;  
 }
 
+.populaire .hebergementListe a article .articleContenant .tauxEtoile {
+    padding-top: 35px;
+}
 
 /* ********************** Activite ***************** */
 
