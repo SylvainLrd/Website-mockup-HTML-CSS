@@ -12,8 +12,7 @@
 
 body {
     font-family:'Raleway';
-    margin: 0;
-    padding: 0px 50px;
+    margin: 0px 50px;
     font-size: 18px;
 }
 
@@ -75,7 +74,7 @@ header nav ul li:hover a {
 
 
 h1 {
-    margin-bottom: 0px
+    margin-bottom: 10px;
 }
 
 .subtitle {
@@ -95,7 +94,6 @@ h1 {
 .searchBox .fa-map-marker-alt {
     display: flex;
     padding: 14px;
-    height: 28px;
     font-size: 25px;
     background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
@@ -103,10 +101,11 @@ h1 {
 
 .searchBox input {
     outline: none;
-    height: 52px;
     margin-left: -5px;
     border: none;
     padding: 10px;
+    color: black;
+    font-weight: bold;
 }
 
 .searchBox button {
@@ -133,7 +132,7 @@ h1 {
 }
 
 #filtre .filtreBox {
-    margin: 0px 10px;
+    margin: 15px 20px 10px 20px;
     border-radius: 30px;
     border: 2px solid #F2F2F2;
     display: flex;
@@ -149,7 +148,7 @@ h1 {
     width: 50px;
     display: inline-block;
     border-radius: 100%;
-    color: var(--blue);
+    color: #0065FC;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,8 +159,8 @@ h1 {
     background-color: #DEEBFF;
 }
 
-#filtre .filtreBox .text {
-    padding: 0px 10px;
+.filtreBox .texte {
+    padding: 0px 15px;
 }
 
 
@@ -170,11 +169,13 @@ h1 {
 
 .info {
     display: flex;
+    align-items: center;
+    padding: 30px 0px;
 }
 
 .info .fas.fa-info {
     color: #0065FC;
-    border: 1px solid #F2F2F2;
+    border: 2px solid #F2F2F2;
     border-radius: 100%;
     width: 25px;
     height: 25px;
@@ -396,3 +397,4 @@ footer .colonne ul li a {
     text-decoration: none;
     line-height: 35px;
 }
+
