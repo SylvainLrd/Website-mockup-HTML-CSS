@@ -1,0 +1,116 @@
+@media (max-width: 768px){
+
+ body {
+    margin: 0;
+ }
+
+ header {
+    flex-direction: column;
+ }
+
+ header #logo {
+    margin: auto;
+ }
+
+ header nav ul {
+    margin: 0px -20px;
+    padding: 0;
+ }
+
+ header nav ul li {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin: 0px;
+    margin-right: -30px;
+    border-top: none;
+    border-bottom: 2px solid #f2f2f2;
+ }
+
+ h1 {
+    font-size: 120%;
+    margin-left: 30px;
+    padding-top: 50px;
+ }
+
+ .subtitle {
+    font-size: 100%;
+    margin-left: 30px;
+ }
+
+ .searchBox {
+   align-items: center;
+   margin-left: 30px;
+ }
+
+ .searchBox button {
+    border-radius: 15px;
+ }
+
+ .searchBox button span {
+    display: none;
+ }
+
+ .searchBox button .fa-search {
+    display: block;
+ }
+ 
+ p {
+    margin-left: 30px;
+ }
+
+ #filtre {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30px;
+ }
+
+ #hebergement .contenant {
+    padding: 20px 20px 20px 20px;
+    margin-right: -50px;
+ }
+ #hebergement .marseille {
+    order: 2;
+ }
+
+ #hebergement .populaire {
+    order: 1;
+ }
+
+ #hebergement .marseille .hebergementListe {
+    flex-direction: column;
+ }
+
+ #hebergement .marseille .hebergementListe a {
+    width: 100%;
+ }
+
+ #activite {
+    padding: 20px; 
+ }
+
+ #activite .activiteListe .colonne .colonneDouble {
+    align-items: center;
+    width: 100%;
+ }
+
+ /* .activiteliste .colonne article img,
+ .activiteListe .colonneDouble article img {
+    height: 250px;
+    margin-bottom: 20px;
+ } */
+
+ #activite img {
+    height: 200px;
+    width: 100% 
+    
+ }
+
+ footer {
+    flex-direction: column;
+ }
+}
+
+@media (max-width: 450px) {
+
+}
