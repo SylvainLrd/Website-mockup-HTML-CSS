@@ -1,37 +1,35 @@
 @media (max-width: 992px) {
+    #filtre {
+        flex-wrap: wrap;
+    }
+    
+    #hebergement {
+        flex-direction: column;
+    }
+    
+    #hebergement .marseille,
+    #hebergement .populaire {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    #activite .activiteListe {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    
+    #activite .activiteListe .colonne,
+    #activite .activiteListe .colonneDouble {
+        width: 48%;
+        padding-bottom: 30px;
+    }
+    
+    footer {
+        justify-content: space-between;
+    }
+    
+    footer .colonne {
+        width: auto;
+    }
 
- #filtre {
-     flex-wrap: wrap;
-     align-items: center;
- }
-
- #hebergement {
-     flex-direction: column;
- }
-
- #hebergement .marseille,
- #hebergement .populaire {
-     width: 100%; 
-     margin-bottom: 20px;
- }
-
- #activite .activiteListe {
-     width: 100%;
- }
- 
- #activite .activiteListe .colonne article img {
-     min-width: 60%;
- } 
- 
- #activite .activiteListe .colonneDouble article img {  
-     min-width: 200px;
- }
-
- footer {
-    justify-content: space-between;
- }
-
- footer .colonne {
-    width: auto;
- }
 }

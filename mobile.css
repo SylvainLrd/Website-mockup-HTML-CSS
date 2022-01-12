@@ -1,116 +1,173 @@
 @media (max-width: 768px){
 
- body {
-    margin: 0;
- }
+   body {
+      padding: 0px;
+   }
+  
+   header {
+      flex-direction: column;
+   }
+  
+   header #logo {
+      margin: auto;
+   }
+  
+   header nav ul {
+      margin: 0px -20px;
+      padding: 0;
+   }
+  
+   header nav ul li {
+      width: 50%;
+      padding: 20px;
+      text-align: center;
+      margin: 0px;
+      border-top: none;
+      border-bottom: 2px solid #f2f2f2;
+   }
+  
+   .searchBox button {
+      border-radius: 15px;
+   }
+  
+   .searchBox button span {
+      display: none;
+   }
+  
+   .searchBox button .fa-search {
+      display: block;
+   } 
+  
+   #filtre {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+  
+   #hebergement .marseille {
+      order: 2;
+   }
+  
+   #hebergement .populaire {
+      order: 1;
+   }
+  
+   #hebergement .marseille .hebergementListe {
+      flex-direction: column;
+   }
 
- header {
-    flex-direction: column;
- }
+   #hebergement .marseille .hebergementListe a {
+      width: 100%;
+   }
+  
+   #activite .activiteListe .colonne,
+   #activite .activiteListe .colonneDouble {
+      width: 100%;
+   }
+  
+  .activiteListe .colonne article,
+  .activiteListe .colonneDouble article {
+      height: 250px;
+      margin-bottom: 20px;
+   }
+  
+   footer {
+      flex-direction: column;
+   }
+   
+   footer .colonne h2 {
+      margin: 20px 0px;
+   }
 
- header #logo {
-    margin: auto;
- }
-
- header nav ul {
-    margin: 0px -20px;
-    padding: 0;
- }
-
- header nav ul li {
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    margin: 0px;
-    margin-right: -30px;
-    border-top: none;
-    border-bottom: 2px solid #f2f2f2;
- }
-
- h1 {
-    font-size: 120%;
-    margin-left: 30px;
-    padding-top: 50px;
- }
-
- .subtitle {
-    font-size: 100%;
-    margin-left: 30px;
- }
-
- .searchBox {
-   align-items: center;
-   margin-left: 30px;
- }
-
- .searchBox button {
-    border-radius: 15px;
- }
-
- .searchBox button span {
-    display: none;
- }
-
- .searchBox button .fa-search {
-    display: block;
- }
- 
- p {
-    margin-left: 30px;
- }
-
- #filtre {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 30px;
- }
-
- #hebergement .contenant {
-    padding: 20px 20px 20px 20px;
-    margin-right: -50px;
- }
- #hebergement .marseille {
-    order: 2;
- }
-
- #hebergement .populaire {
-    order: 1;
- }
-
- #hebergement .marseille .hebergementListe {
-    flex-direction: column;
- }
-
- #hebergement .marseille .hebergementListe a {
-    width: 100%;
- }
-
- #activite {
-    padding: 20px; 
- }
-
- #activite .activiteListe .colonne .colonneDouble {
-    align-items: center;
-    width: 100%;
- }
-
- /* .activiteliste .colonne article img,
- .activiteListe .colonneDouble article img {
-    height: 250px;
-    margin-bottom: 20px;
- } */
-
- #activite img {
-    height: 200px;
-    width: 100% 
-    
- }
-
- footer {
-    flex-direction: column;
- }
-}
+   footer .colonne ul li {
+      margin-bottom: 5px;
+   }
+} 
 
 @media (max-width: 450px) {
+   body {
+      padding: 0;
+   }
 
+   header nav {
+      margin: 0px -30px;
+   }
+
+   header nav ul li {
+      margin-bottom : 30px;
+   }
+
+   h1 { 
+      margin: 10px -10px;
+   }
+
+   .subtitle{
+      margin: 15px -10px;
+   }
+
+   .searchBox {
+      margin: 30px 0px;
+   }
+
+   #filtre {
+      margin: 0px -10px;
+   }
+
+   .info {
+      margin: 0px -20px;
+   }
+    
+   #hebergement {
+      margin: 0px -50px;  
+   }
+
+   #hebergement .contenant {
+      border-radius: 0px;
+   }
+
+    #hebergement .contenant h2 {
+       font-size: 120%;
+    }
+
+   #hebergement .marseille .contenant{
+       background-color: white;
+       margin-top: -50px;
+   }
+
+   .hebergementListe a article {
+      border-bottom: 2px solid #f2f2f2;
+      box-shadow: 0px 0px 10px 0px #E0E0E0;
+   }
+
+   #hebergement .marseille .subtitle {
+      margin-left: 10px;
+      margin-top: -20px;
+   }
+
+   #activite {
+      margin: 0px -30px;
+   }
+
+   #activite h2 {
+      margin-top: -50px;
+   }
+   
+   footer .colonne h2 {
+      margin: 20px 0px;
+   }
+
+   footer .colonne ul li {
+      margin-bottom: 5px;
+   }
+}
+ 
+@media (max-width: 400px) {
+   .searchBox {
+      margin-left: -30px;
+   }
+}
+
+@media (max-width: 360px) {
+   .searchBox {
+      margin-left: -50px;
+   }
 }

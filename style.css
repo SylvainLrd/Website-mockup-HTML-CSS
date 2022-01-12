@@ -6,7 +6,6 @@
     font-family: 'Raleway';
     font-size: 1em;
     text-decoration: none;
-    color: black;
     margin: 0;
     padding: 0;
 }
@@ -197,10 +196,13 @@ h1 {
     justify-content: space-between;
 }
 
-#hebergement .contenant{
+#hebergement .contenant {
     background-color: #F2F2F2;
-    padding: 20px 50px 10px 50px;
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 70px;
     border-radius: 25px;
+    height: calc(100% - 120px);      
+    box-sizing: content-box;
 }
 
 #hebergement .contenant h2 {
@@ -209,21 +211,15 @@ h1 {
     font-weight: bold;
 }
 
-
 .hebergementListe {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.marseille .hebergementListe a {
-    /* width: 30%; */
-    margin-bottom: 30px;
-}
-.marseille .hebergementListe a article {
-    background-color:white;
-    padding: 6px;
-    border-radius: 25px;
-    height: 250px;
+
+.hebergementListe a {
+    width: 30%;
+    margin-bottom: 50px;
 }
 
 .hebergementListe a article {
@@ -237,11 +233,24 @@ h1 {
     box-shadow: 5px 5px 5px 0px #E2E2E2;
 }
 
+.hebergementListe a article .fa-star.blue {
+    color: #0065FC;
+}
+
+.hebergementListe a article .fa-star.grey {
+    color: #d9d9d9;
+}
+
 .hebergementListe a article img {
-    width: 285px;
-    height: 140px;
+    width: 100%;
+    height: 200px;
     border-radius: 25px 25px 0px 0px;
     object-fit: cover;
+}
+
+.hebergementListe a {
+    color: black;
+    text-decoration: none;
 }
 
 .hebergementListe a article .articleContenant {
@@ -253,22 +262,12 @@ h1 {
     margin: 6px;
     font-weight: bold;
 }
-.hebergementListe a article .fa-star.blue {
-    color: #0065FC;
-}
-
-.hebergementListe a article .fa-star.grey {
-    color: #d9d9d9;
-}
-
 
 /* ********************** Marseille ************************ */
 
 
 #hebergement .marseille {
-    background-color: #F2F2F2;
     width: 60%;
-    border-radius: 25px;    
 }
 
 #hebergement .marseille .subtitle {
@@ -280,11 +279,10 @@ h1 {
 /* ************* Populaire ******************** */
 
 
-.populaire .graphiqueIcon {
+#hebergement .populaire .graphiqueIcon {
     position: absolute;
-    top: 30px;
-    right: 50px;
-    font-size: 125%;
+    top: 20px;
+    right: 20px;
 }
 
 #hebergement .populaire {
@@ -294,13 +292,10 @@ h1 {
 
 #hebergement .populaire .hebergementListe {
     flex-direction: column;
-    padding-top: 30px;
-    margin-bottom: 10px;
 }
 
-.populaire .hebergementListe a {
+#hebergement .populaire .hebergementListe a {
     width: 100%;
-    padding-bottom: 40px;
 }
 
 #hebergement .populaire .hebergementListe a article {
@@ -310,67 +305,65 @@ h1 {
 
 #hebergement .populaire .hebergementListe a article img {
     border-radius: 25px 0px 0px 25px;
-    width: 200px;
-    height: 150px;
+    width: 35%;
 }
 
 #hebergement .populaire .hebergementListe a article .articleContenant {
     display: flex;
-    flex-direction: column;  
+    justify-content: space-between;
+    flex-direction: column;
+
 }
 
-.populaire .hebergementListe a article .articleContenant .tauxEtoile {
-    padding-top: 35px;
-}
 
 /* ********************** Activite ***************** */
 
 
 #activite {
-    padding: 60px 0px 30px 0px;
+    margin-bottom: 60px;
     margin-bottom: 60px;
 }
 
 .activiteListe {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 25px 0px 0px 0px;
+    height: 600px; 
 }
 
-.activiteListe article {
-    background-color: white;
-    box-shadow: 0 0 20px #0000002e;
-    padding: 0px 0px 20px 0px;
-    border-radius: 25px;
-    margin: 0px 0px 20px 0px;
-}
-
-.activiteListe .colonne {
+.activiteListe .colonne,
+.activiteListe .colonneDouble {
+    width: 23%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 25px;
 }
 
-.activiteListe .colonne article img {
-    width: 400px;
-    height: 550px;
+.activiteListe .colonne article img,
+.activiteListe .colonneDouble article img {
+    width: 100%;
+    height: calc(100% - 67px);
     object-fit: cover;
     border-radius: 25px 25px 0px 0px;
 }
 
-.activiteListe .colonneDouble article img {
-    width: 400px;
-    height: 222px;
-    object-fit: cover;
-    border-radius: 25px 25px 0px 0px;
+.activiteListe .colonne article {
+    height: 100%;
+    box-shadow: 0px 0px 10px 0px #E0E0E0;
+    border-radius: 25px;
 }
+
+.activiteListe .colonneDouble article {
+    height: 48%;
+    box-shadow: 0px 0px 10px 0px #E0E0E0;
+    border-radius: 25px;
+}
+
 .activiteListe h3 {
     padding: 20px;
 }
 
-.activiteListe .article .colonneDouble article {
+#activite h2 {
     padding-bottom: 50px;
 }
 
